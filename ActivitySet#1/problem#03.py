@@ -1,10 +1,8 @@
-
-hrs = float(input("Enter Hours:"))
-rph=float(input("Enter Rate: "))
+hrs=float(input("Enter Hours: "))
+rph=float(input("Enter rate: "))
 gpay=hrs*rph
-print("Pay:", str(gpay))
-
-def input():
-  hrs = float(input("Enter Hours:"))
-  rph=float(input("Enter Rate: "))
-  
+if hrs<=40:
+    print(gpay)
+else:
+	print(40*rph+1.5*(rph)*(hrs-40))
+          
